@@ -373,6 +373,14 @@ public class LogicalOp {
         }
     } // While - Ex 10
 
+    public void fillArrayTillHundred(){
+        int x[] = new int[100];
+        for(int i = 0; i < x.length; i++){
+            x[i] = i+1;
+            System.out.println("At index " + i + " number " + (i+1) + " has been saved.");
+        }
+    }
+
 
 
 
