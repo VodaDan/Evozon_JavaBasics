@@ -379,7 +379,63 @@ public class LogicalOp {
             x[i] = i+1;
             System.out.println("At index " + i + " number " + (i+1) + " has been saved.");
         }
-    }
+    } // Array - Ex 2
+
+    public void fillArrayWithEvenTillHundred(int[] array){
+        int count = 2;
+        for(int i = 0; i < array.length; i++){
+            array[i] = count;
+            System.out.println("At index " + i + " number " + count + " has been saved.");
+            count = count+2;
+        }
+    } // Array - Ex 3
+
+    public void arrayCalculateAverageOfArray(int[] array){
+        int sum = 0;
+        for(int i = 0; i < array.length; i++){
+            sum = sum+array[i];
+        }
+        System.out.println("Average of the array is : " + sum/array.length);
+    } // Array - Ex 4
+
+    public boolean arrayVerifyContent(String[] array, String verify){
+        for(String word: array) {
+           if(word.equals(verify)){
+               return true;
+           }
+        }
+        return false;
+    } // Array - Ex 5
+
+    public int arrayVerifyIndex(int[] array, int toCheck) {
+        for(int i = 0; i< array.length; i++) {
+            if(array[i] == toCheck) {
+                return i;
+            }
+        }
+        return -1;
+    } // Array - Ex 6
+
+    public void printGrill() {
+        for(int i = 0; i<10; i++){
+            System.out.println("- - - - - - - - - - ");
+        }
+    } // Array - Ex 7
+
+    public int[] arrayVerifyIndexAndDelete(int[] array, int toCheck) {
+        int[] newArray = new int[array.length-1];
+        int j = 0;
+        for(int i = 0; i< array.length; i++) {
+            if(array[i] == toCheck) {
+                continue;
+            }
+            newArray[j]=array[i];
+            j++;
+        }
+        return newArray;
+    } // Array - Ex 8
+
+
 
 
 

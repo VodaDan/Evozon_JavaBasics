@@ -159,9 +159,37 @@ public class Main {
 //        System.out.println(calculator.impartire(22.2,11.1));
 
         // Arrays - Ex 2
-        comparer.fillArrayTillHundred();
+//        comparer.fillArrayTillHundred();
 
         // Arrays - Ex 3
+//        int[] array = new int[50];
+//        comparer.fillArrayWithEvenTillHundred(array);
+
+        // Arrays - Ex 4
+//        int[] newArray = {1,2,3,4,5};
+//        comparer.arrayCalculateAverageOfArray(newArray);
+
+        // Arrays - Ex 5
+        String[] secondArray = {"Unu","Doi","Trei"};
+        String word = "Doe";
+        System.out.println("The word is present in the String array? " + comparer.arrayVerifyContent(secondArray,word));
+
+        // Arrays - Ex 6
+        int[] thirdArray = {1,2,3,4,5,6};
+        System.out.println("Number found at index: " + comparer.arrayVerifyIndex(thirdArray,4));
+
+        // Arrays - Ex 7
+        System.out.println("Printing Grill:");
+        comparer.printGrill();
+
+        // Arrays - Ex 8
+        System.out.println("Deleting number in Array");
+        for(int x: comparer.arrayVerifyIndexAndDelete(thirdArray,3)){
+            System.out.print(x);
+        }
+        System.out.println();
+
+        
 
 
 
