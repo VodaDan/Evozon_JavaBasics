@@ -13,7 +13,12 @@ public class Main {
         System.out.println(impartire(12,8));
 
         afisareModel();
-
+        System.out.println(averageOfThreeNumbers(4,3,3));
+        System.out.println(restImpartire(8,3));
+        System.out.println(fahrenheitToCelsius(98));
+        System.out.println(inchToMeter(40));
+        distAndTimeToSpeed(90000,1,0,0);
+        circleCalculation(4);
     }
 
     public static void printMyName(String name) {
@@ -58,6 +63,45 @@ public class Main {
         System.out.println(" |  ^  | ");
         System.out.println(" | '-' | ");
         System.out.println(" +-----+");
-    }
+    } // ex 3
+
+    public static float averageOfThreeNumbers(int firstNumber, int secondNumber, int thirdNumber) {
+        return (float)(firstNumber+secondNumber+thirdNumber)/3;
+    } // ex 4
+
+    public static int restImpartire(int firstNumber, int secondNumber) {
+        return firstNumber%secondNumber;
+    } // ex 5
+
+    public static float fahrenheitToCelsius(int tempF) {
+        float celsius =  (float)5/9 * (tempF-32);
+        return celsius;
+    } // ex 6
+
+    public static double inchToMeter(double inch) {
+        return (inch * 0.0254);
+    } // ex 7
+
+    public static void distAndTimeToSpeed (float dist, int hours, int minutes, int seconds) {
+        int totalSeconds = hours * 3600 + minutes * 60 + seconds; // 3600 seconds in 1 hour , 60 seconds in 1 minute
+        float metersPerSecond= dist / totalSeconds;
+        float meterPerHour = metersPerSecond * 60 * 60;
+        float speedPerHour = meterPerHour/1000; // transforming to km/h
+        double speedPerHourInMiles = speedPerHour * 0.62137; // transforming to miles/hour
+        System.out.println("Total Seconds: " + totalSeconds);
+        System.out.println("Speed per seconds: " + metersPerSecond + " m/s");
+        System.out.println("Speed per hour: " + speedPerHour + " km/h");
+        System.out.println("Speed per hour in miles: " + speedPerHourInMiles + " mi/h");
+    } // ex 8
+
+    public static void circleCalculation(int radius) {
+        double pi = 3.14;
+        double area = pi * radius * radius;
+        double perimeter = 2 * pi * radius;
+        System.out.printf("Perimeter : %.2f \n",perimeter);
+        System.out.printf("Area : %.2f",area);
+    } // ex 9
+
+
 
 }
