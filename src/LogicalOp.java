@@ -190,6 +190,33 @@ public class LogicalOp {
         System.out.println();
     }
 
+    public int sumToOneHundred() {
+        int sum=0;
+        for(int i = 0 ;i<=100 ;i++ ){
+            sum = sum+i;
+        }
+        return sum;
+    }
+
+    public float averageOfNumberFrom(int start) {
+        int totalNumbers=101-start;
+        float sum=0;
+        for(int i = start; i<=100 ;i++ ){
+            sum = sum+i;
+
+        }
+        return sum/totalNumbers;
+    }
+
+    public void printStars(){
+        for(int i = 0; i<7;i++){
+            for(int j =0; j<7-i ; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
 
 
 }
