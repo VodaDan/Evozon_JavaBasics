@@ -1,5 +1,3 @@
-import java.util.List;
-
 public class LogicalOp {
 
     public int checkBiggerNumber(int a, int b) {
@@ -8,7 +6,7 @@ public class LogicalOp {
         } else {
             return b;
         }
-    }
+    } // Assignment if-else - ex 3
 
     public String compareText(String text) {
         if(text.toLowerCase().equals("evozon")) {
@@ -17,7 +15,7 @@ public class LogicalOp {
             text = "Got to try some more";
         }
         return text;
-    }
+    } // Assignment if-else - ex 4
 
     public String compareTextAndNumber(String text, int number) {
         if(text.toLowerCase().equals("evozon") && number >= 4) {
@@ -25,7 +23,7 @@ public class LogicalOp {
         } else {
             return  text + String.valueOf(number);
         }
-    }
+    } // Assignment if-else - ex 5
 
     public String snowHeight(int cm) {
         if(cm > 8 || cm == 6){
@@ -33,7 +31,7 @@ public class LogicalOp {
         } else {
             return "The forecast snow is(cm):" + String.valueOf(cm);
         }
-    }
+    } // Assignment if-else - 6
 
     public String numbersComparation(int number) {
         if(number == 4){
@@ -43,7 +41,7 @@ public class LogicalOp {
         } else {
             return "The number is lower than 3";
         }
-    }
+    } // Assignment if-else - ex 7
 
     public void printNumberSwitch(int number){
         switch (number) {
@@ -66,7 +64,7 @@ public class LogicalOp {
                 System.out.println("I kindly ask you to use lower numbers(1-5)..");
 
         }
-    }
+    } // Assignment if-else - ex 8
 
     public boolean isNumberEven (int number) {
         if(number%2==0) {
@@ -74,7 +72,7 @@ public class LogicalOp {
         } else {
             return false;
         }
-    }
+    } // Assignment if-else - ex 9
 
     public boolean isEligibleToVote(int age) {
         if(age >= 18) {
@@ -82,7 +80,7 @@ public class LogicalOp {
         } else {
             return false;
         }
-    }
+    } // Assignment if-else - ex 10
 
     public int maxNumber(int a, int b, int c){
         if(a > b) {
@@ -96,8 +94,128 @@ public class LogicalOp {
         } else {
             return c;
         }
+    } // Assignment if-else - ex 11
+
+    public void countToOneHundredFrom(int number) {
+        System.out.println("\n---- Starting the counting to 100 from "+number+" ----");
+        for (int i = number; i<=100; i++){
+            if(i==100){
+                System.out.print(i);
+            } else {
+                System.out.print(i+",");
+            }
+
+        }
+        System.out.println("\n---- Finished the counting to 100 ----");
+    } // Assignment For Loops - ex 1
+
+    public void countToMinusOneHundredFrom(int number) {
+        System.out.println("\n---- Starting the counting to -100 from "+number+" ----");
+        for (int i = number; i>=-100; i--){
+            if(i==-100){
+                System.out.print(i);
+            } else {
+                System.out.print(i+",");
+            }
+
+        }
+        System.out.println("\n---- Finished the counting to -100 ----\n");
+    } // Assignment For Loops - ex 2
+
+    public void countFromStartToEnd(int start, int end) {
+        System.out.println("\n---- Starting the counting to "+end+" from "+start+" ----");
+        if(start < end){
+            for (int i = start; i<=end; i++){
+                if(i==end){
+                    System.out.print(i);
+                } else {
+                    System.out.print(i+",");
+                }
+            }
+        } else {
+            for (int i = start; i>=end; i--){
+                if(i==end){
+                    System.out.print(i);
+                } else {
+                    System.out.print(i+",");
+                }
+            }
+        }
+
+        System.out.println("\n---- Finished the counting to "+end+" ----\n");
+    } // Assignment For Loops - ex 3
+
+    public void countToBiggestOfInputs(int a, int b) {
+        int start;
+        int end;
+        if(a>=b){
+            start = b;
+            end = a;
+        } else {
+            start = a;
+            end = b;
+        }
+        System.out.println("\n---- Starting the counting to "+end+" from "+start+" ----");
+            for (int i = start; i<=end; i++){
+                if(i==end){
+                    System.out.print(i);
+                } else {
+                    System.out.print(i+",");
+                }
+            }
+        System.out.println("\n---- Finished the counting to "+end+" ----\n");
+    } // Assignment For Loops - ex 4
+
+    public void printEvenToOneHundred(){
+        for(int i = 2; i<=100; i=i+2) {
+            if(i==100){
+                System.out.print(i);
+            } else {
+                System.out.print(i+",");
+            }
+        }
+        System.out.println();
     }
 
+    public void printOddToOneHundred(){
+        for(int i = 0; i<=100; i++) {
+            if(i%2==1){
+                if(i==99){
+                    System.out.print(i);
+                } else {
+                    System.out.print(i+",");
+                }
+            }
+        }
+        System.out.println();
+    }
+
+    public int sumToOneHundred() {
+        int sum=0;
+        for(int i = 0 ;i<=100 ;i++ ){
+            sum = sum+i;
+        }
+        return sum;
+    }
+
+    public float averageOfNumberFrom(int start) {
+        int totalNumbers=101-start;
+        float sum=0;
+        for(int i = start; i<=100 ;i++ ){
+            sum = sum+i;
+
+        }
+        return sum/totalNumbers;
+    }
+
+    public void printStars(){
+        for(int i = 0; i<7;i++){
+            for(int j =0; j<7-i ; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
 
 
 
