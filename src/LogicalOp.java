@@ -16,4 +16,13 @@ public class LogicalOp {
         }
         return text;
     }
+
+    public String compareTextAndNumber(String text, int number) {
+        if(text.toLowerCase().equals("evozon") && number >= 4) {
+            return String.valueOf(number) + text;
+        } else {
+            return  text + String.valueOf(number);
+        }
+
+    }
 }

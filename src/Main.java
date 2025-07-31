@@ -27,6 +27,7 @@ public class Main {
         int biggestNumber = comparer.checkBiggerNumber(44,51);
         System.out.println("The biggest number is: " + biggestNumber);
         System.out.println(comparer.compareText(""));
+        System.out.println(comparer.compareTextAndNumber("Evozon", 7));
     }
 
     public static void printMyName(String name) {
