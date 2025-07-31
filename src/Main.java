@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -32,6 +34,17 @@ public class Main {
         System.out.println(comparer.numbersComparation(5));
         comparer.printNumberSwitch(2);
         System.out.println(comparer.isNumberEven(0));
+
+        //Exercise 10 - is eligible to vote
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What is your age? \n");
+        int age = scanner.nextInt();
+        if(comparer.isEligibleToVote(age)){
+            System.out.println("You are eligible to vote!");
+        } else {
+            System.out.println("You are not eligible to vote!");
+        }
+
     }
 
     public static void printMyName(String name) {

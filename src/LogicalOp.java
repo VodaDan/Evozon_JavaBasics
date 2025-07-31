@@ -76,7 +76,15 @@ public class LogicalOp {
         }
     }
 
-    
+    public boolean isEligibleToVote(int age) {
+        if(age >= 18) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
 
 
 }
