@@ -1,4 +1,6 @@
 import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -137,7 +139,7 @@ public class Main {
 
         /** ------------- Assignment Arrays ------------- */
 
-        // Arrays - Ex 1
+//        //Arrays - Ex 1
 //        System.out.println("Adunare -----");
 //        System.out.println(calculator.adunare(1,1));
 //        System.out.println(calculator.adunare(1.5f,1.5f));
@@ -157,48 +159,116 @@ public class Main {
 //        System.out.println(calculator.impartire(4,2));
 //        System.out.println(calculator.impartire(7.5f,1.5f));
 //        System.out.println(calculator.impartire(22.2,11.1));
-
-        // Arrays - Ex 2
+//
+//        // Arrays - Ex 2
 //        comparer.fillArrayTillHundred();
-
-        // Arrays - Ex 3
+//
+//        // Arrays - Ex 3
 //        int[] array = new int[50];
 //        comparer.fillArrayWithEvenTillHundred(array);
-
-        // Arrays - Ex 4
+//
+//        // Arrays - Ex 4
 //        int[] newArray = {1,2,3,4,5};
 //        comparer.arrayCalculateAverageOfArray(newArray);
+//
+//        // Arrays - Ex 5
+//        String[] secondArray = {"Unu","Doi","Trei"};
+//        String word = "Doe";
+//        System.out.println("The word is present in the String array? " + comparer.arrayVerifyContent(secondArray,word));
+//
+//        // Arrays - Ex 6
+//        int[] thirdArray = {99,4,24,3,5,6,42,33,161};
+//        System.out.println("Number found at index: " + comparer.arrayVerifyIndex(thirdArray,4));
+//
+//        // Arrays - Ex 7
+//        System.out.println("Printing Grill:");
+//        comparer.printGrill();
+//
+//        // Arrays - Ex 8
+//        System.out.println("Deleting number in Array");
+//        for(int x: comparer.arrayVerifyIndexAndDelete(thirdArray,3)){
+//            System.out.print(x + ", ");
+//        }
+//        System.out.println();
+//
+//        // Arrays - Ex 9
+//        System.out.println("Second smalles number in array {99,4,24,3,5,6,42,33,161} is :  " + comparer.arraySecondSmallesElement(thirdArray));
+//
+//        // Arrays - Ex 10
+//        System.out.println("Populate new array with existing array");
+//        int[] fourthArray = new int[thirdArray.length];
+//        for(int x: comparer.arrayPopulateNewArray(thirdArray,fourthArray)){
+//            System.out.print(x + ", ");
+//        }
+//        System.out.println();
 
-        // Arrays - Ex 5
-        String[] secondArray = {"Unu","Doi","Trei"};
-        String word = "Doe";
-        System.out.println("The word is present in the String array? " + comparer.arrayVerifyContent(secondArray,word));
+        /** ------------- Assignment Lists ------------- */
+        Lists liste = new Lists();
 
-        // Arrays - Ex 6
-        int[] thirdArray = {99,4,24,3,5,6,42,33,161};
-        System.out.println("Number found at index: " + comparer.arrayVerifyIndex(thirdArray,4));
-
-        // Arrays - Ex 7
-        System.out.println("Printing Grill:");
-        comparer.printGrill();
-
-        // Arrays - Ex 8
-        System.out.println("Deleting number in Array");
-        for(int x: comparer.arrayVerifyIndexAndDelete(thirdArray,3)){
-            System.out.print(x + ", ");
-        }
+        // Lists - Ex 1
+        System.out.println("Ex1-Printing List ");
+        liste.listPrint(List.of(1,4,"sah"));
         System.out.println();
 
-        // Arrays - Ex 9
-        System.out.println("Second smalles number in array {99,4,24,3,5,6,42,33,161} is :  " + comparer.arraySecondSmallesElement(thirdArray));
-
-        // Arrays - Ex 10
-        System.out.println("Populate new array with existing array");
-        int[] fourthArray = new int[thirdArray.length];
-        for(int x: comparer.arrayPopulateNewArray(thirdArray,fourthArray)){
-            System.out.print(x + ", ");
-        }
+        // Lists - Ex 2
+        System.out.println("Ex2-Adding number 4 to list ");
+        ArrayList<Integer> newList = new ArrayList<>();
+        liste.listAddNumber(newList,10);
+        System.out.println(newList.toString());
         System.out.println();
+
+        // Lists - Ex 3
+        System.out.println("Ex3-Print list from number in list ");
+        ArrayList<Integer> newList1 = new ArrayList<>();
+        newList1.add(1);
+        newList1.add(3);
+        newList1.add(4);
+        newList1.add(2);
+        liste.listPrintFromNumber(newList1,3);
+        System.out.println();
+
+        // Lists - Ex 4
+        System.out.println("Ex4-Print list reverted ");
+        ArrayList<Integer> newList2 = new ArrayList<>();
+        newList2.add(22);
+        newList2.add(3);
+        newList2.add(41);
+        newList2.add(2);
+        liste.listPrintReverted(newList2);
+        System.out.println();
+
+        // Lists - Ex 5
+        System.out.println("Ex5- Add element at specific index");
+        ArrayList<String> newList3 = new ArrayList<>();
+        newList3.add("Daniel");
+        newList3.add("Dan");
+        newList3.add("Danut");
+        liste.listAddElementAtIndex(newList3,2,"Mircea");
+        liste.listPrint(newList3);
+
+        // Lists - Ex 6
+        System.out.println("Ex6- Add element at index 0");
+        liste.listAddElementFirstIndex(newList3,"ZZZZZZZ");
+        liste.listPrint(newList3);
+
+        // Lists - Ex 7
+        System.out.println("Ex7- Printing indexes and elements");
+        liste.listPrintListAndIndex(newList2);
+
+        // Lists - Ex 8
+        System.out.println("Ex7- Printing max value from list");
+        System.out.println(liste.listReturnMaxNumber(newList2));
+
+
+
+
+
+
+
+
+
+
+
 
 
 
