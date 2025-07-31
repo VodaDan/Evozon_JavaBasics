@@ -33,7 +33,7 @@ public class Main {
         System.out.println(comparer.snowHeight(2));
         System.out.println(comparer.numbersComparation(5));
         comparer.printNumberSwitch(2);
-        System.out.println(comparer.isNumberEven(0));
+        System.out.println("Is the number even? " + comparer.isNumberEven(0));
 
         //Exercise 10 - is eligible to vote
         Scanner scanner = new Scanner(System.in);
@@ -44,6 +44,13 @@ public class Main {
         } else {
             System.out.println("You are not eligible to vote!");
         }
+
+        //Exercise 11 -  max number between 3 inputs
+        System.out.println("Introduceti 3 numere");
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int c = scanner.nextInt();
+        System.out.println("Biggest number is: " + comparer.maxNumber(a,b,c));
 
     }
 
