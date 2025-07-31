@@ -8,7 +8,7 @@ public class LogicalOp {
         } else {
             return b;
         }
-    }
+    } // Assignment if-else - ex 3
 
     public String compareText(String text) {
         if(text.toLowerCase().equals("evozon")) {
@@ -17,7 +17,7 @@ public class LogicalOp {
             text = "Got to try some more";
         }
         return text;
-    }
+    } // Assignment if-else - ex 4
 
     public String compareTextAndNumber(String text, int number) {
         if(text.toLowerCase().equals("evozon") && number >= 4) {
@@ -25,7 +25,7 @@ public class LogicalOp {
         } else {
             return  text + String.valueOf(number);
         }
-    }
+    } // Assignment if-else - ex 5
 
     public String snowHeight(int cm) {
         if(cm > 8 || cm == 6){
@@ -33,7 +33,7 @@ public class LogicalOp {
         } else {
             return "The forecast snow is(cm):" + String.valueOf(cm);
         }
-    }
+    } // Assignment if-else - 6
 
     public String numbersComparation(int number) {
         if(number == 4){
@@ -43,7 +43,7 @@ public class LogicalOp {
         } else {
             return "The number is lower than 3";
         }
-    }
+    } // Assignment if-else - ex 7
 
     public void printNumberSwitch(int number){
         switch (number) {
@@ -66,7 +66,7 @@ public class LogicalOp {
                 System.out.println("I kindly ask you to use lower numbers(1-5)..");
 
         }
-    }
+    } // Assignment if-else - ex 8
 
     public boolean isNumberEven (int number) {
         if(number%2==0) {
@@ -74,7 +74,7 @@ public class LogicalOp {
         } else {
             return false;
         }
-    }
+    } // Assignment if-else - ex 9
 
     public boolean isEligibleToVote(int age) {
         if(age >= 18) {
@@ -82,7 +82,7 @@ public class LogicalOp {
         } else {
             return false;
         }
-    }
+    } // Assignment if-else - ex 10
 
     public int maxNumber(int a, int b, int c){
         if(a > b) {
@@ -96,6 +96,32 @@ public class LogicalOp {
         } else {
             return c;
         }
+    } // Assignment if-else - ex 11
+
+    public void countToOneHundredFrom(int number) {
+        System.out.println("\n---- Starting the counting to 100 from "+number+" ----");
+        for (int i = number; i<=100; i++){
+            if(i==100){
+                System.out.print(i);
+            } else {
+                System.out.print(i+",");
+            }
+
+        }
+        System.out.println("\n---- Finished the counting to 100 ----");
+    }
+
+    public void countToMinusOneHundredFrom(int number) {
+        System.out.println("\n---- Starting the counting to -100 from "+number+" ----");
+        for (int i = number; i>=-100; i--){
+            if(i==-100){
+                System.out.print(i);
+            } else {
+                System.out.print(i+",");
+            }
+
+        }
+        System.out.println("\n---- Finished the counting to -100 ----\n\n\n");
     }
 
 

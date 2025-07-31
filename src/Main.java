@@ -26,31 +26,42 @@ public class Main {
 //        System.out.println(calculator.impartire(12,8));
 
         LogicalOp comparer = new LogicalOp();
-        int biggestNumber = comparer.checkBiggerNumber(44,51);
-        System.out.println("The biggest number is: " + biggestNumber);
-        System.out.println(comparer.compareText(""));
-        System.out.println(comparer.compareTextAndNumber("Evozon", 7));
-        System.out.println(comparer.snowHeight(2));
-        System.out.println(comparer.numbersComparation(5));
-        comparer.printNumberSwitch(2);
-        System.out.println("Is the number even? " + comparer.isNumberEven(0));
-
-        //Exercise 10 - is eligible to vote
+//        int biggestNumber = comparer.checkBiggerNumber(44,51);
+//        System.out.println("The biggest number is: " + biggestNumber);
+//        System.out.println(comparer.compareText(""));
+//        System.out.println(comparer.compareTextAndNumber("Evozon", 7));
+//        System.out.println(comparer.snowHeight(2));
+//        System.out.println(comparer.numbersComparation(5));
+//        comparer.printNumberSwitch(2);
+//        System.out.println("Is the number even? " + comparer.isNumberEven(0));
+//
+//        //Exercise 10 - is eligible to vote
         Scanner scanner = new Scanner(System.in);
-        System.out.println("What is your age? \n");
-        int age = scanner.nextInt();
-        if(comparer.isEligibleToVote(age)){
-            System.out.println("You are eligible to vote!");
-        } else {
-            System.out.println("You are not eligible to vote!");
-        }
+//        System.out.println("What is your age? \n");
+//        int age = scanner.nextInt();
+//        if(comparer.isEligibleToVote(age)){
+//            System.out.println("You are eligible to vote!");
+//        } else {
+//            System.out.println("You are not eligible to vote!");
+//        }
+//
+//        //Exercise 11 -  max number between 3 inputs
+//        System.out.println("Introduceti 3 numere");
+//        int a = scanner.nextInt();
+//        int b = scanner.nextInt();
+//        int c = scanner.nextInt();
+//        System.out.println("Biggest number is: " + comparer.maxNumber(a,b,c));
 
-        //Exercise 11 -  max number between 3 inputs
-        System.out.println("Introduceti 3 numere");
-        int a = scanner.nextInt();
-        int b = scanner.nextInt();
-        int c = scanner.nextInt();
-        System.out.println("Biggest number is: " + comparer.maxNumber(a,b,c));
+
+        /** ------------- Assignment For Loops ------------- */
+
+
+        System.out.println("Start counting to 100 from: ");
+        int number = scanner.nextInt();
+        comparer.countToOneHundredFrom(number);
+        System.out.println("Start counting to -100 from: ");
+        int number2 = scanner.nextInt();
+        comparer.countToMinusOneHundredFrom(number2);
 
     }
 
