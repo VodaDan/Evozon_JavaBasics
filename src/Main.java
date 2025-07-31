@@ -2,13 +2,17 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        printMyName("Dan"); //ex1
+//        printMyName("Dan"); //ex1
+//        printSum(5,2); //ex2
+//        printDivision(9,4);  //ex3
+//        printCalculations(); //ex4
 
-        printSum(5,2); //ex2
+        System.out.println(adunare(1,1));
+        System.out.println(scadere(5,2));
+        System.out.println(inmultire(3,3));
+        System.out.println(impartire(12,8));
 
-        printDivision(9,4);  //ex3
-
-        printCalculations(); //ex4
+        afisareModel();
 
     }
 
@@ -31,4 +35,29 @@ public class Main {
         System.out.println(20+ (-3)*5/8);  //c
         System.out.println(5+15/3*2-8%3);  //d
     }
+
+    public static int adunare(int a, int b){
+        return a+b;
+    }
+
+    public static int scadere(int a, int b){
+        return a-b;
+    }
+
+    public static int inmultire(int a, int b){
+        return a*b;
+    }
+
+    public static float impartire(float a, float b){
+        return a/b;
+    }
+
+    public static void afisareModel(){
+        System.out.println(" +\"\"\"\"\"+ ");
+        System.out.println("[| o o |] ");
+        System.out.println(" |  ^  | ");
+        System.out.println(" | '-' | ");
+        System.out.println(" +-----+");
+    }
+
 }
