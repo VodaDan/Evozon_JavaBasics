@@ -14,6 +14,7 @@ public class Main {
 
         afisareModel();
         System.out.println(averageOfThreeNumbers(4,3,3));
+        System.out.println(restImpartire(8,3));
 
     }
 
@@ -59,10 +60,16 @@ public class Main {
         System.out.println(" |  ^  | ");
         System.out.println(" | '-' | ");
         System.out.println(" +-----+");
-    }
+    } // ex 3
 
     public static float averageOfThreeNumbers(int firstNumber, int secondNumber, int thirdNumber) {
         return (float)(firstNumber+secondNumber+thirdNumber)/3;
-    }
+    } // ex 4
+
+    public static int restImpartire(int firstNumber, int secondNumber) {
+        return firstNumber%secondNumber;
+    } // ex 5
+
+
 
 }
