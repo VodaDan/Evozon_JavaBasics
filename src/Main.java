@@ -17,7 +17,7 @@ public class Main {
         System.out.println(restImpartire(8,3));
         System.out.println(fahrenheitToCelsius(98));
         System.out.println(inchToMeter(40));
-
+        distAndTimeToSpeed(90000,1,0,0);
     }
 
     public static void printMyName(String name) {
@@ -79,7 +79,19 @@ public class Main {
 
     public static double inchToMeter(double inch) {
         return (inch * 0.0254);
-    }
+    } // ex 7
+
+    public static void distAndTimeToSpeed (float dist, int hours, int minutes, int seconds) {
+        int totalSeconds = hours * 3600 + minutes * 60 + seconds; // 3600 seconds in 1 hour , 60 seconds in 1 minute
+        float metersPerSecond= dist / totalSeconds;
+        float meterPerHour = metersPerSecond * 60 * 60;
+        float speedPerHour = meterPerHour/1000;
+        double speedPerHourInMiles = speedPerHour * 0.62137;
+        System.out.println("Total Seconds: " + totalSeconds);
+        System.out.println("Speed per seconds: " + metersPerSecond + " m/s");
+        System.out.println("Speed per hour: " + speedPerHour + " km/h");
+        System.out.println("Speed per hour in miles:  " + speedPerHourInMiles + " mi/h");
+    } // ex 8
 
 
 
