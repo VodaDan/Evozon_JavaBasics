@@ -16,6 +16,7 @@ public class Main {
         System.out.println(averageOfThreeNumbers(4,3,3));
         System.out.println(restImpartire(8,3));
         System.out.println(fahrenheitToCelsius(98));
+        System.out.println(inchToMeter(40));
 
     }
 
@@ -75,6 +76,10 @@ public class Main {
         float celsius =  (float)5/9 * (tempF-32);
         return celsius;
     } // ex 6
+
+    public static double inchToMeter(double inch) {
+        return (inch * 0.0254);
+    }
 
 
 
