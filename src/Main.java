@@ -69,6 +69,19 @@ public class Main {
         System.out.println("Counting from start to end");
         comparer.countFromStartToEnd(1,-34);
 
+        //Ex 4
+        System.out.println("Counting from smallest of the two inputs to the biggest");
+        comparer.countToBiggestOfInputs(7,44);
+
+        //Ex 5
+        System.out.println("Counting to 100 with even numbers");
+        comparer.printEvenToOneHundred();
+
+        //Ex 5
+        System.out.println("Counting to 100 with odd numbers");
+        comparer.printOddToOneHundred();
+
+
 
     }
 

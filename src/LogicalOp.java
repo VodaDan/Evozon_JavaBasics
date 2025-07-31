@@ -1,5 +1,3 @@
-import java.util.List;
-
 public class LogicalOp {
 
     public int checkBiggerNumber(int a, int b) {
@@ -147,6 +145,50 @@ public class LogicalOp {
         System.out.println("\n---- Finished the counting to "+end+" ----\n");
     } // Assignment For Loops - ex 3
 
+    public void countToBiggestOfInputs(int a, int b) {
+        int start;
+        int end;
+        if(a>=b){
+            start = b;
+            end = a;
+        } else {
+            start = a;
+            end = b;
+        }
+        System.out.println("\n---- Starting the counting to "+end+" from "+start+" ----");
+            for (int i = start; i<=end; i++){
+                if(i==end){
+                    System.out.print(i);
+                } else {
+                    System.out.print(i+",");
+                }
+            }
+        System.out.println("\n---- Finished the counting to "+end+" ----\n");
+    } // Assignment For Loops - ex 4
+
+    public void printEvenToOneHundred(){
+        for(int i = 2; i<=100; i=i+2) {
+            if(i==100){
+                System.out.print(i);
+            } else {
+                System.out.print(i+",");
+            }
+        }
+        System.out.println();
+    }
+
+    public void printOddToOneHundred(){
+        for(int i = 0; i<=100; i++) {
+            if(i%2==1){
+                if(i==99){
+                    System.out.print(i);
+                } else {
+                    System.out.print(i+",");
+                }
+            }
+        }
+        System.out.println();
+    }
 
 
 
