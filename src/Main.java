@@ -29,6 +29,7 @@ public class Main {
         System.out.println(comparer.compareText(""));
         System.out.println(comparer.compareTextAndNumber("Evozon", 7));
         System.out.println(comparer.snowHeight(2));
+        System.out.println(comparer.numbersComparation(5));
     }
 
     public static void printMyName(String name) {

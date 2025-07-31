@@ -34,4 +34,14 @@ public class LogicalOp {
             return "The forecast snow is(cm):" + String.valueOf(cm);
         }
     }
+
+    public String numbersComparation(int number) {
+        if(number == 4){
+            return "The number is equal to 4";
+        } else if(number > 3) {
+            return "The number is greater than 3 and not equal to 4";
+        } else {
+            return "The number is lower than 3";
+        }
+    }
 }
