@@ -34,4 +34,20 @@ public class Lists {
         list.addFirst(word);
     } // Lists - Ex 6
 
+    public void listPrintListAndIndex(ArrayList<Integer> list) {
+        for(int number: list) {
+            System.out.println("At index "+list.indexOf(number) + " the elemnt is " + number);
+        }
+    } // Lists - Ex 7
+
+    public int listReturnMaxNumber(ArrayList<Integer> list) {
+        int max = list.get(0);
+        for(int number: list) {
+            if(number > max) {
+                max = number;
+            }
+        }
+        return max;
+    } // Lists - Ex 8
+
 }

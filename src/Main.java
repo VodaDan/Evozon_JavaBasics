@@ -252,6 +252,13 @@ public class Main {
         liste.listPrint(newList3);
 
         // Lists - Ex 7
+        System.out.println("Ex7- Printing indexes and elements");
+        liste.listPrintListAndIndex(newList2);
+
+        // Lists - Ex 8
+        System.out.println("Ex7- Printing max value from list");
+        System.out.println(liste.listReturnMaxNumber(newList2));
+
 
 
 
