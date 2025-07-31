@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class LogicalOp {
 
     public int checkBiggerNumber(int a, int b) {
@@ -23,6 +25,13 @@ public class LogicalOp {
         } else {
             return  text + String.valueOf(number);
         }
+    }
 
+    public String snowHeight(int cm) {
+        if(cm > 8 || cm == 6){
+            return "The amount of snow this winter was(cm):  " + String.valueOf(cm);
+        } else {
+            return "The forecast snow is(cm):" + String.valueOf(cm);
+        }
     }
 }

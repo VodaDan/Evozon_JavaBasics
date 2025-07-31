@@ -28,6 +28,7 @@ public class Main {
         System.out.println("The biggest number is: " + biggestNumber);
         System.out.println(comparer.compareText(""));
         System.out.println(comparer.compareTextAndNumber("Evozon", 7));
+        System.out.println(comparer.snowHeight(2));
     }
 
     public static void printMyName(String name) {
