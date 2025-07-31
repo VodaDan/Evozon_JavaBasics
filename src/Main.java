@@ -1,5 +1,6 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 //        printMyName("Dan"); //ex1
@@ -7,18 +8,50 @@ public class Main {
 //        printDivision(9,4);  //ex3
 //        printCalculations(); //ex4
 
-        System.out.println(adunare(1,1));
-        System.out.println(scadere(5,2));
-        System.out.println(inmultire(3,3));
-        System.out.println(impartire(12,8));
+//        Calculator calculator = new Calculator();
+//
+//
+//        afisareModel();
+//        System.out.println(averageOfThreeNumbers(4,3,3));
+//        System.out.println(restImpartire(8,3));
+//        System.out.println(fahrenheitToCelsius(98));
+//        System.out.println(inchToMeter(40));
+//        distAndTimeToSpeed(90000,1,0,0);
+//        circleCalculation(4);
 
-        afisareModel();
-        System.out.println(averageOfThreeNumbers(4,3,3));
-        System.out.println(restImpartire(8,3));
-        System.out.println(fahrenheitToCelsius(98));
-        System.out.println(inchToMeter(40));
-        distAndTimeToSpeed(90000,1,0,0);
-        circleCalculation(4);
+        /** ------------- Assignment If-Else ------------- */
+//        System.out.println(calculator.adunare(1,1));
+//        System.out.println(calculator.scadere(5,2));
+//        System.out.println(calculator.inmultire(3,3));
+//        System.out.println(calculator.impartire(12,8));
+
+        LogicalOp comparer = new LogicalOp();
+        int biggestNumber = comparer.checkBiggerNumber(44,51);
+        System.out.println("The biggest number is: " + biggestNumber);
+        System.out.println(comparer.compareText(""));
+        System.out.println(comparer.compareTextAndNumber("Evozon", 7));
+        System.out.println(comparer.snowHeight(2));
+        System.out.println(comparer.numbersComparation(5));
+        comparer.printNumberSwitch(2);
+        System.out.println("Is the number even? " + comparer.isNumberEven(0));
+
+        //Exercise 10 - is eligible to vote
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What is your age? \n");
+        int age = scanner.nextInt();
+        if(comparer.isEligibleToVote(age)){
+            System.out.println("You are eligible to vote!");
+        } else {
+            System.out.println("You are not eligible to vote!");
+        }
+
+        //Exercise 11 -  max number between 3 inputs
+        System.out.println("Introduceti 3 numere");
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int c = scanner.nextInt();
+        System.out.println("Biggest number is: " + comparer.maxNumber(a,b,c));
+
     }
 
     public static void printMyName(String name) {
@@ -39,22 +72,6 @@ public class Main {
         System.out.println((55+9)%9);  //b
         System.out.println(20+ (-3)*5/8);  //c
         System.out.println(5+15/3*2-8%3);  //d
-    }
-
-    public static int adunare(int a, int b){
-        return a+b;
-    }
-
-    public static int scadere(int a, int b){
-        return a-b;
-    }
-
-    public static int inmultire(int a, int b){
-        return a*b;
-    }
-
-    public static float impartire(float a, float b){
-        return a/b;
     }
 
     public static void afisareModel(){
@@ -99,9 +116,7 @@ public class Main {
         double area = pi * radius * radius;
         double perimeter = 2 * pi * radius;
         System.out.printf("Perimeter : %.2f \n",perimeter);
-        System.out.printf("Area : %.2f",area);
+        System.out.printf("Area : %.2f \n",area);
     } // ex 9
-
-
 
 }
