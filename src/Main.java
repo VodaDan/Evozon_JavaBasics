@@ -119,6 +119,22 @@ public class Main {
         System.out.println("Counting to 100 only odd");
         comparer.whileOddCount();
 
+        //While - Ex7
+        System.out.println("---- Sum and average of numbers between 111 and 8899 ----");
+        comparer.addNumbersAndPrintAverage(111,8899);
+
+        //While - Ex8
+        System.out.println("---- Average of numbers divisible with 7 between interval ----");
+        System.out.println("The average is: " + comparer.whileAverageOfDivisibleWithSeven(1,14));
+
+        //While - Ex9
+        System.out.println("First 20 numbers of Fibonacci sequence");
+        comparer.fibbonaciSequence();
+
+        //While - Ex9
+        System.out.println("----- Coza Loza Woza -----");
+        comparer.CozaLozaWoza();
+
 
 
 
