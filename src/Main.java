@@ -15,6 +15,7 @@ public class Main {
         afisareModel();
         System.out.println(averageOfThreeNumbers(4,3,3));
         System.out.println(restImpartire(8,3));
+        System.out.println(fahrenheitToCelsius(98));
 
     }
 
@@ -69,6 +70,11 @@ public class Main {
     public static int restImpartire(int firstNumber, int secondNumber) {
         return firstNumber%secondNumber;
     } // ex 5
+
+    public static float fahrenheitToCelsius(int tempF) {
+        float celsius =  (float)5/9 * (tempF-32);
+        return celsius;
+    } // ex 6
 
 
 
