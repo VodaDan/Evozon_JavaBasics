@@ -8,7 +8,7 @@ public class Main {
 //        printDivision(9,4);  //ex3
 //        printCalculations(); //ex4
 
-//        Calculator calculator = new Calculator();
+        Calculator calculator = new Calculator();
 //
 //
 //        afisareModel();
@@ -95,45 +95,113 @@ public class Main {
 
         /** ------------- Assignment While Loop ------------- */
 
-        //While - Ex1
-        System.out.println("Counting to 100 from number given");
-        comparer.whileCountOneHundred(24);
+//        //While - Ex1
+//        System.out.println("Counting to 100 from number given");
+//        comparer.whileCountOneHundred(24);
+//
+//        //While - Ex2
+//        System.out.println("Counting to -100 from number given");
+//        comparer.whileCountToMinusOneHundred(24);
+//
+//        //While - Ex3
+//        System.out.println("Counting to From Start to End numbers");
+//        comparer.whileCountStartToEnd(24,60);
+//
+//        //While - Ex4
+//        System.out.println("Counting to From Start to End numbers take smallest input");
+//        comparer.whileCountFromSmallest(20,60);
+//
+//        //While - Ex5
+//        System.out.println("Counting to 100 only even");
+//        comparer.whileEvenCount();
+//
+//        //While - Ex6
+//        System.out.println("Counting to 100 only odd");
+//        comparer.whileOddCount();
+//
+//        //While - Ex7
+//        System.out.println("---- Sum and average of numbers between 111 and 8899 ----");
+//        comparer.addNumbersAndPrintAverage(111,8899);
+//
+//        //While - Ex8
+//        System.out.println("---- Average of numbers divisible with 7 between interval ----");
+//        System.out.println("The average is: " + comparer.whileAverageOfDivisibleWithSeven(1,14));
+//
+//        //While - Ex9
+//        System.out.println("First 20 numbers of Fibonacci sequence");
+//        comparer.fibbonaciSequence();
+//
+//        //While - Ex10
+//        System.out.println("----- Coza Loza Woza -----");
+//        comparer.CozaLozaWoza();
 
-        //While - Ex2
-        System.out.println("Counting to -100 from number given");
-        comparer.whileCountToMinusOneHundred(24);
+        /** ------------- Assignment Arrays ------------- */
 
-        //While - Ex3
-        System.out.println("Counting to From Start to End numbers");
-        comparer.whileCountStartToEnd(24,60);
+        // Arrays - Ex 1
+//        System.out.println("Adunare -----");
+//        System.out.println(calculator.adunare(1,1));
+//        System.out.println(calculator.adunare(1.5f,1.5f));
+//        System.out.println(calculator.adunare(1,1,1,1));
+//
+//        System.out.println("Scadere -----");
+//        System.out.println(calculator.scadere(2,1));
+//        System.out.println(calculator.scadere(5.5f,1.5f));
+//        System.out.println(calculator.scadere(1,1,1));
+//
+//        System.out.println("Inmultire -----");
+//        System.out.println(calculator.inmultire(1,4));
+//        System.out.println(calculator.inmultire(1.5f,1.5f,3.5f));
+//        System.out.println(calculator.inmultire(2,2,1,2));
+//
+//        System.out.println("Impartire -----");
+//        System.out.println(calculator.impartire(4,2));
+//        System.out.println(calculator.impartire(7.5f,1.5f));
+//        System.out.println(calculator.impartire(22.2,11.1));
 
-        //While - Ex4
-        System.out.println("Counting to From Start to End numbers take smallest input");
-        comparer.whileCountFromSmallest(20,60);
+        // Arrays - Ex 2
+//        comparer.fillArrayTillHundred();
 
-        //While - Ex5
-        System.out.println("Counting to 100 only even");
-        comparer.whileEvenCount();
+        // Arrays - Ex 3
+//        int[] array = new int[50];
+//        comparer.fillArrayWithEvenTillHundred(array);
 
-        //While - Ex6
-        System.out.println("Counting to 100 only odd");
-        comparer.whileOddCount();
+        // Arrays - Ex 4
+//        int[] newArray = {1,2,3,4,5};
+//        comparer.arrayCalculateAverageOfArray(newArray);
 
-        //While - Ex7
-        System.out.println("---- Sum and average of numbers between 111 and 8899 ----");
-        comparer.addNumbersAndPrintAverage(111,8899);
+        // Arrays - Ex 5
+        String[] secondArray = {"Unu","Doi","Trei"};
+        String word = "Doe";
+        System.out.println("The word is present in the String array? " + comparer.arrayVerifyContent(secondArray,word));
 
-        //While - Ex8
-        System.out.println("---- Average of numbers divisible with 7 between interval ----");
-        System.out.println("The average is: " + comparer.whileAverageOfDivisibleWithSeven(1,14));
+        // Arrays - Ex 6
+        int[] thirdArray = {99,4,24,3,5,6,42,33,161};
+        System.out.println("Number found at index: " + comparer.arrayVerifyIndex(thirdArray,4));
 
-        //While - Ex9
-        System.out.println("First 20 numbers of Fibonacci sequence");
-        comparer.fibbonaciSequence();
+        // Arrays - Ex 7
+        System.out.println("Printing Grill:");
+        comparer.printGrill();
 
-        //While - Ex9
-        System.out.println("----- Coza Loza Woza -----");
-        comparer.CozaLozaWoza();
+        // Arrays - Ex 8
+        System.out.println("Deleting number in Array");
+        for(int x: comparer.arrayVerifyIndexAndDelete(thirdArray,3)){
+            System.out.print(x + ", ");
+        }
+        System.out.println();
+
+        // Arrays - Ex 9
+        System.out.println("Second smalles number in array {99,4,24,3,5,6,42,33,161} is :  " + comparer.arraySecondSmallesElement(thirdArray));
+
+        // Arrays - Ex 10
+        System.out.println("Populate new array with existing array");
+        int[] fourthArray = new int[thirdArray.length];
+        for(int x: comparer.arrayPopulateNewArray(thirdArray,fourthArray)){
+            System.out.print(x + ", ");
+        }
+        System.out.println();
+
+
+
 
 
 
