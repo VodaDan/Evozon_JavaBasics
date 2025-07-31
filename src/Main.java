@@ -55,13 +55,20 @@ public class Main {
 
         /** ------------- Assignment For Loops ------------- */
 
-
+        //Ex 1
         System.out.println("Start counting to 100 from: ");
         int number = scanner.nextInt();
         comparer.countToOneHundredFrom(number);
+
+        //Ex 2
         System.out.println("Start counting to -100 from: ");
         int number2 = scanner.nextInt();
         comparer.countToMinusOneHundredFrom(number2);
+
+        //Ex 3
+        System.out.println("Counting from start to end");
+        comparer.countFromStartToEnd(1,-34);
+
 
     }
 

@@ -109,7 +109,7 @@ public class LogicalOp {
 
         }
         System.out.println("\n---- Finished the counting to 100 ----");
-    }
+    } // Assignment For Loops - ex 1
 
     public void countToMinusOneHundredFrom(int number) {
         System.out.println("\n---- Starting the counting to -100 from "+number+" ----");
@@ -121,8 +121,31 @@ public class LogicalOp {
             }
 
         }
-        System.out.println("\n---- Finished the counting to -100 ----\n\n\n");
-    }
+        System.out.println("\n---- Finished the counting to -100 ----\n");
+    } // Assignment For Loops - ex 2
+
+    public void countFromStartToEnd(int start, int end) {
+        System.out.println("\n---- Starting the counting to "+end+" from "+start+" ----");
+        if(start < end){
+            for (int i = start; i<=end; i++){
+                if(i==end){
+                    System.out.print(i);
+                } else {
+                    System.out.print(i+",");
+                }
+            }
+        } else {
+            for (int i = start; i>=end; i--){
+                if(i==end){
+                    System.out.print(i);
+                } else {
+                    System.out.print(i+",");
+                }
+            }
+        }
+
+        System.out.println("\n---- Finished the counting to "+end+" ----\n");
+    } // Assignment For Loops - ex 3
 
 
 
