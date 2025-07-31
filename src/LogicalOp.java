@@ -217,6 +217,168 @@ public class LogicalOp {
         }
     }
 
+    public void whileCountOneHundred(int i) {
+        while(i <= 100) {
+            if(i==100){
+                System.out.print(i);
+            } else {
+                System.out.print(i+",");
+            }
+            i++;
+        }
+        System.out.println("\n");
+    } // While - Ex 1
+
+    public void whileCountToMinusOneHundred(int i) {
+        while(i >= -100) {
+            if(i==-100){
+                System.out.print(i);
+            } else {
+                System.out.print(i+",");
+            }
+            i--;
+        }
+        System.out.println("\n");
+    } // While - Ex 2
+
+    public void whileCountStartToEnd(int start, int end) {
+        while(start <= end) {
+            if(start==end){
+                System.out.print(start);
+            } else {
+                System.out.print(start+",");
+            }
+            start++;
+        }
+        System.out.println("\n");
+    } // While - Ex 3
+
+    public void whileCountFromSmallest(int a, int b) {
+        int start;
+        int end;
+        if(a>b){
+            start = b;
+            end = a;
+        } else {
+            start = a;
+            end = b;
+        }
+
+        while(start <= end) {
+            if(start==end){
+                System.out.print(start);
+            } else {
+                System.out.print(start+",");
+            }
+            start++;
+        }
+        System.out.println("\n");
+    } // While - Ex 4
+
+    public void whileEvenCount(){
+        int i = 1;
+        while(i<=100){
+            if(i%2==0) {
+                System.out.print(i+",");
+            }
+            i++;
+        }
+        System.out.println();
+    } // While - Ex 5
+
+    public void whileOddCount(){
+        int i = 1;
+        while(i<=100){
+            if(i==99){
+                System.out.print(i);
+            } else {
+                System.out.print(i+",");
+            }
+            i=i+2;
+        }
+    } // While - Ex 6
+
+    public void addNumbersAndPrintAverage(int i, int end) {
+        int count = 0;
+        int totalSum = 0;
+        while(i<=end){
+            count ++;
+            totalSum = totalSum + i;
+            i++;
+        }
+        System.out.println("Total Sum of numbers between 111 and 8899 is: " + totalSum);
+        System.out.println("Average of the sum is: "+ totalSum/count);
+
+    } // While - Ex 7
+
+    public float whileAverageOfDivisibleWithSeven(int start, int end){
+        int totalSum = 0;
+        int count = 0;
+        while(start<=end){
+            if(start%7==0) {
+                totalSum = totalSum + start;
+                count++;
+            }
+            start++;
+        }
+        System.out.println();
+        return (float) totalSum/count;
+    } // While - Ex 8
+
+    public void fibbonaciSequence(){
+        int count = 0;
+        int lastNumber = 0;
+        int secondLastNumber = 1;
+        int sum = 0;
+        while(count<20) {
+            System.out.print(sum+",");
+            sum = lastNumber + secondLastNumber;
+            secondLastNumber = lastNumber;
+            lastNumber = sum;
+            count++;
+        }
+        System.out.println("\n");
+    } // While - Ex 9
+
+    public void CozaLozaWoza() {
+        int i = 1;
+        while (i<=110) {
+            if(i%11==1) {
+                System.out.println();
+            }
+            if(i%3==0){
+                if(i%5==0){
+                    if(i%7==0){
+                        System.out.print("CozaLozaWoza ");
+                    } else {
+                        System.out.print("CozaLoza ");
+                    }
+                } else if(i%7==0) {
+                    System.out.print("CozaWoza ");
+                } else {
+                    System.out.print("Coza ");
+                }
+            } else if(i%5==0) {
+                if(i%7==0){
+                    System.out.print("WozaLoza ");
+                } else {
+                    System.out.print("Loza ");
+                }
+            } else if(i%7==0) {
+                System.out.print("Woza ");
+            } else {
+                System.out.print(i+" ");
+            }
+            i++;
+        }
+    } // While - Ex 10
+
+
+
+
+
+
+
 
 
 }

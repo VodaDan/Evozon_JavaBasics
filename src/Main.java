@@ -69,29 +69,73 @@ public class Main {
 //        System.out.println("Counting from start to end");
 //        comparer.countFromStartToEnd(1,-34);
 
-        //Ex 4
-        System.out.println("Counting from smallest of the two inputs to the biggest");
-        comparer.countToBiggestOfInputs(7,44);
+//        //Ex 4
+//        System.out.println("Counting from smallest of the two inputs to the biggest");
+//        comparer.countToBiggestOfInputs(7,44);
+//
+//        //Ex 5
+//        System.out.println("Counting to 100 with even numbers");
+//        comparer.printEvenToOneHundred();
+//
+//        //Ex 6
+//        System.out.println("Counting to 100 with odd numbers");
+//        comparer.printOddToOneHundred();
+//
+//        //Ex 7
+//        System.out.println("Sum to 100 is:");
+//        System.out.println(comparer.sumToOneHundred());
+//
+//        //Ex 8
+//        System.out.println("Average from number 98 to 100 is:");
+//        System.out.println(comparer.averageOfNumberFrom(98));
+//
+//        //Ex 9
+//        System.out.println("Print stars");
+//        comparer.printStars();
 
-        //Ex 5
-        System.out.println("Counting to 100 with even numbers");
-        comparer.printEvenToOneHundred();
+        /** ------------- Assignment While Loop ------------- */
 
-        //Ex 6
-        System.out.println("Counting to 100 with odd numbers");
-        comparer.printOddToOneHundred();
+        //While - Ex1
+        System.out.println("Counting to 100 from number given");
+        comparer.whileCountOneHundred(24);
 
-        //Ex 7
-        System.out.println("Sum to 100 is:");
-        System.out.println(comparer.sumToOneHundred());
+        //While - Ex2
+        System.out.println("Counting to -100 from number given");
+        comparer.whileCountToMinusOneHundred(24);
 
-        //Ex 8
-        System.out.println("Average from number 98 to 100 is:");
-        System.out.println(comparer.averageOfNumberFrom(98));
+        //While - Ex3
+        System.out.println("Counting to From Start to End numbers");
+        comparer.whileCountStartToEnd(24,60);
 
-        //Ex 9
-        System.out.println("Print stars");
-        comparer.printStars();
+        //While - Ex4
+        System.out.println("Counting to From Start to End numbers take smallest input");
+        comparer.whileCountFromSmallest(20,60);
+
+        //While - Ex5
+        System.out.println("Counting to 100 only even");
+        comparer.whileEvenCount();
+
+        //While - Ex6
+        System.out.println("Counting to 100 only odd");
+        comparer.whileOddCount();
+
+        //While - Ex7
+        System.out.println("---- Sum and average of numbers between 111 and 8899 ----");
+        comparer.addNumbersAndPrintAverage(111,8899);
+
+        //While - Ex8
+        System.out.println("---- Average of numbers divisible with 7 between interval ----");
+        System.out.println("The average is: " + comparer.whileAverageOfDivisibleWithSeven(1,14));
+
+        //While - Ex9
+        System.out.println("First 20 numbers of Fibonacci sequence");
+        comparer.fibbonaciSequence();
+
+        //While - Ex9
+        System.out.println("----- Coza Loza Woza -----");
+        comparer.CozaLozaWoza();
+
+
 
 
 
