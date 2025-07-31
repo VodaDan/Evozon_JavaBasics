@@ -435,6 +435,28 @@ public class LogicalOp {
         return newArray;
     } // Array - Ex 8
 
+    public int arraySecondSmallesElement(int[] array) {
+        int min = array[0];
+        int secondMin = array[1];
+        for(int x: array){
+            if(x < min) {
+                min = x;
+            } else if (x < secondMin && x > min) {
+                secondMin = x;
+            }
+        }
+        return secondMin;
+    } // Array - Ex 9
+
+    public int[] arrayPopulateNewArray(int[] array, int[] toPopulate) {
+        for(int i = 0; i< array.length; i++) {
+            toPopulate[i] = array[i];
+        }
+        return toPopulate;
+    } // Array - Ex 10
+
+
+
 
 
 

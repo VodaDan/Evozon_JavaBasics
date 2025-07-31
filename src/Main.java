@@ -175,7 +175,7 @@ public class Main {
         System.out.println("The word is present in the String array? " + comparer.arrayVerifyContent(secondArray,word));
 
         // Arrays - Ex 6
-        int[] thirdArray = {1,2,3,4,5,6};
+        int[] thirdArray = {99,4,24,3,5,6,42,33,161};
         System.out.println("Number found at index: " + comparer.arrayVerifyIndex(thirdArray,4));
 
         // Arrays - Ex 7
@@ -185,11 +185,22 @@ public class Main {
         // Arrays - Ex 8
         System.out.println("Deleting number in Array");
         for(int x: comparer.arrayVerifyIndexAndDelete(thirdArray,3)){
-            System.out.print(x);
+            System.out.print(x + ", ");
         }
         System.out.println();
 
-        
+        // Arrays - Ex 9
+        System.out.println("Second smalles number in array {99,4,24,3,5,6,42,33,161} is :  " + comparer.arraySecondSmallesElement(thirdArray));
+
+        // Arrays - Ex 10
+        System.out.println("Populate new array with existing array");
+        int[] fourthArray = new int[thirdArray.length];
+        for(int x: comparer.arrayPopulateNewArray(thirdArray,fourthArray)){
+            System.out.print(x + ", ");
+        }
+        System.out.println();
+
+
 
 
 
