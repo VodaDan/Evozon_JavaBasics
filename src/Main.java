@@ -69,29 +69,35 @@ public class Main {
 //        System.out.println("Counting from start to end");
 //        comparer.countFromStartToEnd(1,-34);
 
-        //Ex 4
-        System.out.println("Counting from smallest of the two inputs to the biggest");
-        comparer.countToBiggestOfInputs(7,44);
+//        //Ex 4
+//        System.out.println("Counting from smallest of the two inputs to the biggest");
+//        comparer.countToBiggestOfInputs(7,44);
+//
+//        //Ex 5
+//        System.out.println("Counting to 100 with even numbers");
+//        comparer.printEvenToOneHundred();
+//
+//        //Ex 6
+//        System.out.println("Counting to 100 with odd numbers");
+//        comparer.printOddToOneHundred();
+//
+//        //Ex 7
+//        System.out.println("Sum to 100 is:");
+//        System.out.println(comparer.sumToOneHundred());
+//
+//        //Ex 8
+//        System.out.println("Average from number 98 to 100 is:");
+//        System.out.println(comparer.averageOfNumberFrom(98));
+//
+//        //Ex 9
+//        System.out.println("Print stars");
+//        comparer.printStars();
 
-        //Ex 5
-        System.out.println("Counting to 100 with even numbers");
-        comparer.printEvenToOneHundred();
+        /** ------------- Assignment While Loop ------------- */
 
-        //Ex 6
-        System.out.println("Counting to 100 with odd numbers");
-        comparer.printOddToOneHundred();
-
-        //Ex 7
-        System.out.println("Sum to 100 is:");
-        System.out.println(comparer.sumToOneHundred());
-
-        //Ex 8
-        System.out.println("Average from number 98 to 100 is:");
-        System.out.println(comparer.averageOfNumberFrom(98));
-
-        //Ex 9
-        System.out.println("Print stars");
-        comparer.printStars();
+        //While - Ex1
+        System.out.println("Counting to 100 from number given");
+        comparer.whileCountOneHundred(24);
 
 
 

@@ -217,6 +217,19 @@ public class LogicalOp {
         }
     }
 
+    public void whileCountOneHundred(int i) {
+        while(i <= 100) {
+            if(i==100){
+                System.out.print(i);
+            } else {
+                System.out.print(i+",");
+            }
+            i++;
+        }
+    }
+
+    
+
 
 
 }
