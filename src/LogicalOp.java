@@ -226,9 +226,83 @@ public class LogicalOp {
             }
             i++;
         }
-    }
+        System.out.println("\n");
+    } // While - Ex 1
 
-    
+    public void whileCountToMinusOneHundred(int i) {
+        while(i >= -100) {
+            if(i==-100){
+                System.out.print(i);
+            } else {
+                System.out.print(i+",");
+            }
+            i--;
+        }
+        System.out.println("\n");
+    } // While - Ex 2
+
+    public void whileCountStartToEnd(int start, int end) {
+        while(start <= end) {
+            if(start==end){
+                System.out.print(start);
+            } else {
+                System.out.print(start+",");
+            }
+            start++;
+        }
+        System.out.println("\n");
+    } // While - Ex 3
+
+    public void whileCountFromSmallest(int a, int b) {
+        int start;
+        int end;
+        if(a>b){
+            start = b;
+            end = a;
+        } else {
+            start = a;
+            end = b;
+        }
+
+        while(start <= end) {
+            if(start==end){
+                System.out.print(start);
+            } else {
+                System.out.print(start+",");
+            }
+            start++;
+        }
+        System.out.println("\n");
+    } // While - Ex 4
+
+    public void whileEvenCount(){
+        int i = 1;
+        while(i<=100){
+            if(i%2==0) {
+                System.out.print(i+",");
+            }
+            i++;
+        }
+        System.out.println();
+    } // While - Ex 5
+
+    public void whileOddCount(){
+        int i = 1;
+        while(i<=100){
+            if(i==99){
+                System.out.print(i);
+            } else {
+                System.out.print(i+",");
+            }
+            i=i+2;
+        }
+    } // While - Ex 6
+
+
+
+
+
+
 
 
 

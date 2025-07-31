@@ -99,6 +99,28 @@ public class Main {
         System.out.println("Counting to 100 from number given");
         comparer.whileCountOneHundred(24);
 
+        //While - Ex2
+        System.out.println("Counting to -100 from number given");
+        comparer.whileCountToMinusOneHundred(24);
+
+        //While - Ex3
+        System.out.println("Counting to From Start to End numbers");
+        comparer.whileCountStartToEnd(24,60);
+
+        //While - Ex4
+        System.out.println("Counting to From Start to End numbers take smallest input");
+        comparer.whileCountFromSmallest(20,60);
+
+        //While - Ex5
+        System.out.println("Counting to 100 only even");
+        comparer.whileEvenCount();
+
+        //While - Ex6
+        System.out.println("Counting to 100 only odd");
+        comparer.whileOddCount();
+
+
+
 
 
 
