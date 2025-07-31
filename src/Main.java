@@ -30,6 +30,8 @@ public class Main {
         System.out.println(comparer.compareTextAndNumber("Evozon", 7));
         System.out.println(comparer.snowHeight(2));
         System.out.println(comparer.numbersComparation(5));
+        comparer.printNumberSwitch(2);
+        System.out.println(comparer.isNumberEven(0));
     }
 
     public static void printMyName(String name) {

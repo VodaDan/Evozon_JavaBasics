@@ -44,4 +44,39 @@ public class LogicalOp {
             return "The number is lower than 3";
         }
     }
+
+    public void printNumberSwitch(int number){
+        switch (number) {
+            case 1:
+                System.out.println("The number is: 1");
+                break;
+            case 2:
+                System.out.println("The number is: 2");
+                break;
+            case 3:
+                System.out.println("The number is: 3");
+                break;
+            case 4:
+                System.out.println("The number is: 4");
+                break;
+            case 5:
+                System.out.println("The number is: 5");
+                break;
+            default:
+                System.out.println("I kindly ask you to use lower numbers(1-5)..");
+
+        }
+    }
+
+    public boolean isNumberEven (int number) {
+        if(number%2==0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    
+
+
 }
