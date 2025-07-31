@@ -6,20 +6,27 @@ public class Main {
 //        printDivision(9,4);  //ex3
 //        printCalculations(); //ex4
 
-        Calculator calculator = new Calculator();
+//        Calculator calculator = new Calculator();
+//
+//
+//        afisareModel();
+//        System.out.println(averageOfThreeNumbers(4,3,3));
+//        System.out.println(restImpartire(8,3));
+//        System.out.println(fahrenheitToCelsius(98));
+//        System.out.println(inchToMeter(40));
+//        distAndTimeToSpeed(90000,1,0,0);
+//        circleCalculation(4);
 
-        System.out.println(calculator.adunare(1,1));
-        System.out.println(calculator.scadere(5,2));
-        System.out.println(calculator.inmultire(3,3));
-        System.out.println(calculator.impartire(12,8));
+        /** ------------- Assignment If-Else ------------- */
+//        System.out.println(calculator.adunare(1,1));
+//        System.out.println(calculator.scadere(5,2));
+//        System.out.println(calculator.inmultire(3,3));
+//        System.out.println(calculator.impartire(12,8));
 
-        afisareModel();
-        System.out.println(averageOfThreeNumbers(4,3,3));
-        System.out.println(restImpartire(8,3));
-        System.out.println(fahrenheitToCelsius(98));
-        System.out.println(inchToMeter(40));
-        distAndTimeToSpeed(90000,1,0,0);
-        circleCalculation(4);
+        LogicalOp comparer = new LogicalOp();
+        int biggestNumber = comparer.checkBiggerNumber(44,51);
+        System.out.println("The biggest number is: " + biggestNumber);
+        System.out.println(comparer.compareText(""));
     }
 
     public static void printMyName(String name) {
@@ -84,7 +91,7 @@ public class Main {
         double area = pi * radius * radius;
         double perimeter = 2 * pi * radius;
         System.out.printf("Perimeter : %.2f \n",perimeter);
-        System.out.printf("Area : %.2f",area);
+        System.out.printf("Area : %.2f \n",area);
     } // ex 9
 
 }
