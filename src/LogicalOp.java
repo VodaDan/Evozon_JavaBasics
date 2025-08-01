@@ -175,7 +175,7 @@ public class LogicalOp {
             }
         }
         System.out.println();
-    }
+    } // Assignment For Loops - ex 5
 
     public void printOddToOneHundred(){
         for(int i = 0; i<=100; i++) {
@@ -188,7 +188,7 @@ public class LogicalOp {
             }
         }
         System.out.println();
-    }
+    } // Assignment For Loops - ex 6
 
     public int sumToOneHundred() {
         int sum=0;
@@ -196,7 +196,7 @@ public class LogicalOp {
             sum = sum+i;
         }
         return sum;
-    }
+    } // Assignment For Loops - ex 7
 
     public float averageOfNumberFrom(int start) {
         int totalNumbers=101-start;
@@ -206,7 +206,7 @@ public class LogicalOp {
 
         }
         return sum/totalNumbers;
-    }
+    } // Assignment For Loops - ex 8
 
     public void printStars(){
         for(int i = 0; i<7;i++){
@@ -215,7 +215,7 @@ public class LogicalOp {
             }
             System.out.println();
         }
-    }
+    } // Assignment For Loops - ex 9
 
     public void whileCountOneHundred(int i) {
         while(i <= 100) {

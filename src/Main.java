@@ -56,7 +56,7 @@ public class Main {
 
 
         /** ------------- Assignment For Loops ------------- */
-
+//
 //        //Ex 1
 //        System.out.println("Start counting to 100 from: ");
 //        int number = scanner.nextInt();
@@ -70,7 +70,7 @@ public class Main {
 //        //Ex 3
 //        System.out.println("Counting from start to end");
 //        comparer.countFromStartToEnd(1,-34);
-
+//
 //        //Ex 4
 //        System.out.println("Counting from smallest of the two inputs to the biggest");
 //        comparer.countToBiggestOfInputs(7,44);
@@ -204,61 +204,76 @@ public class Main {
 
         /** ------------- Assignment Lists ------------- */
         Lists liste = new Lists();
+//
+//        // Lists - Ex 1
+//        System.out.println("Ex1-Printing List ");
+//        liste.listPrint(List.of(1,4,"sah"));
+//        System.out.println();
+//
+//        // Lists - Ex 2
+//        System.out.println("Ex2-Adding number 4 to list ");
+//        ArrayList<Integer> newList = new ArrayList<>();
+//        liste.listAddNumber(newList,10);
+//        System.out.println(newList.toString());
+//        System.out.println();
+//
+//        // Lists - Ex 3
+//        System.out.println("Ex3-Print list from number in list ");
+//        ArrayList<Integer> newList1 = new ArrayList<>();
+//        newList1.add(1);
+//        newList1.add(3);
+//        newList1.add(4);
+//        newList1.add(2);
+//        liste.listPrintFromNumber(newList1,3);
+//        System.out.println();
+//
+//        // Lists - Ex 4
+//        System.out.println("Ex4-Print list reverted ");
+//        ArrayList<Integer> newList2 = new ArrayList<>();
+//        newList2.add(22);
+//        newList2.add(3);
+//        newList2.add(41);
+//        newList2.add(2);
+//        liste.listPrintReverted(newList2);
+//        System.out.println();
+//
+//        // Lists - Ex 5
+//        System.out.println("Ex5- Add element at specific index");
+//        ArrayList<String> newList3 = new ArrayList<>();
+//        newList3.add("Daniel");
+//        newList3.add("Dan");
+//        newList3.add("Danut");
+//        liste.listAddElementAtIndex(newList3,2,"Mircea");
+//        liste.listPrint(newList3);
+//
+//        // Lists - Ex 6
+//        System.out.println("Ex6- Add element at index 0");
+//        liste.listAddElementFirstIndex(newList3,"ZZZZZZZ");
+//        liste.listPrint(newList3);
+//
+//        // Lists - Ex 7
+//        System.out.println("Ex7- Printing indexes and elements");
+//        liste.listPrintListAndIndex(newList2);
+//
+//        // Lists - Ex 8
+//        System.out.println("Ex7- Printing max value from list");
+//        System.out.println(liste.listReturnMaxNumber(newList2));
 
-        // Lists - Ex 1
-        System.out.println("Ex1-Printing List ");
-        liste.listPrint(List.of(1,4,"sah"));
-        System.out.println();
+        /** ------------- Assignment Lists Optional ------------- */
+        ListOptional listOptional = new ListOptional();
 
-        // Lists - Ex 2
-        System.out.println("Ex2-Adding number 4 to list ");
-        ArrayList<Integer> newList = new ArrayList<>();
-        liste.listAddNumber(newList,10);
-        System.out.println(newList.toString());
-        System.out.println();
-
-        // Lists - Ex 3
-        System.out.println("Ex3-Print list from number in list ");
-        ArrayList<Integer> newList1 = new ArrayList<>();
-        newList1.add(1);
-        newList1.add(3);
-        newList1.add(4);
-        newList1.add(2);
-        liste.listPrintFromNumber(newList1,3);
-        System.out.println();
-
-        // Lists - Ex 4
-        System.out.println("Ex4-Print list reverted ");
+        System.out.println("Ex1 - Switch two elements");
         ArrayList<Integer> newList2 = new ArrayList<>();
         newList2.add(22);
         newList2.add(3);
         newList2.add(41);
         newList2.add(2);
-        liste.listPrintReverted(newList2);
+        listOptional.listSwitchElements(newList2, 22, 41);
+        liste.listPrint(newList2);
         System.out.println();
 
-        // Lists - Ex 5
-        System.out.println("Ex5- Add element at specific index");
-        ArrayList<String> newList3 = new ArrayList<>();
-        newList3.add("Daniel");
-        newList3.add("Dan");
-        newList3.add("Danut");
-        liste.listAddElementAtIndex(newList3,2,"Mircea");
-        liste.listPrint(newList3);
-
-        // Lists - Ex 6
-        System.out.println("Ex6- Add element at index 0");
-        liste.listAddElementFirstIndex(newList3,"ZZZZZZZ");
-        liste.listPrint(newList3);
-
-        // Lists - Ex 7
-        System.out.println("Ex7- Printing indexes and elements");
-        liste.listPrintListAndIndex(newList2);
-
-        // Lists - Ex 8
-        System.out.println("Ex7- Printing max value from list");
-        System.out.println(liste.listReturnMaxNumber(newList2));
-
+        System.out.println("Ex2 - Return only Even numbers from list");
+        liste.listPrint(listOptional.listReturnOnlyEven(newList2));
 
 
 
